@@ -9,14 +9,13 @@ audio_path = Path('/home/<PERSONAL_FOLDER>/Music')
 video_path = Path('/home/<PERSONAL_FOLDER>/Videos')
 
 #file types variables
-#Todos os filetypes
-img = ['.jpg']
+img = []
 
-doc = ['.txt']
+doc = []
 
-video = ['.mp4']
+video = []
 
-audio = ['.mp3']
+audio = []
 
 #loop
 while True:
@@ -38,4 +37,4 @@ while True:
             dest = Path(string)
             file.rename(dest)
     sleep(1)
-
+ 
