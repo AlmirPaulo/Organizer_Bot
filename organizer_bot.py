@@ -9,13 +9,22 @@ audio_path = Path('/home/<PERSONAL_FOLDER>/Music')
 video_path = Path('/home/<PERSONAL_FOLDER>/Videos')
 
 #file types variables
-img = []
+doc = ['.txt', '.md', '.pdf', 
+        '.html', .'odt', '.fodt', 
+	'.odg', '.fodg','.ods', 
+	'.fods', '.odp','.fodp',
+	'.epub', '.TXT', '.MD', 
+	'.PDF', '.HTML', '.ODT'
+	'.FODT','.OGD','.FOGD', 
+       '.ODS','.FODS', '.ODP',
+       '.FODP','.EPUB']
 
-doc = []
+img = ['.png', ̈́'.jpg', '.jpeg',.'svg',
+	'PNG', '.JPG','.JPEG' ,'.SVG']
 
-video = []
+video = ['.mkv', '.MKV']
 
-audio = []
+audio = ['.mp3', '.ogg', '.OGG', '.MP3']
 
 #loop
 while True:
