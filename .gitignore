@@ -1,3 +1,5 @@
+*.pyw
+nohup.out 	
 *.swp
 note_*
 

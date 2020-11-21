@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "organizer_bot.py", line 48, in <module>
+    sleep(1)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "organizer_bot.pyw", line 48, in <module>
+    sleep(1)
+KeyboardInterrupt

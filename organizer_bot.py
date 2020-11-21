@@ -2,25 +2,25 @@ from pathlib import Path
 from time import sleep
 
 #path variables
-download = Path('/home/<PERSONAL_FOLDER>/Downloads')
-doc_path = Path('/home/<PERSONAL_FOLDER>/Documents')
-img_path = Path('/home/<PERSONAL_FOLDER>/Pictures')
-audio_path = Path('/home/<PERSONAL_FOLDER>/Music')
-video_path = Path('/home/<PERSONAL_FOLDER>/Videos')
+download = Path('/home/PERSONAL_FOLDER/Downloads')
+doc_path = Path('/home/PERSONAL_FOLDER/Documents')
+img_path = Path('/home/PERSONAL_FOLDER/Pictures')
+audio_path = Path('/home/PERSONAL_FOLDER/Music')
+video_path = Path('/home/PERSONAL_FOLDER/Videos')
 
 #file types variables
 doc = ['.txt', '.md', '.pdf', 
-        '.html', .'odt', '.fodt', 
+        '.html', '.odt', '.fodt', 
 	'.odg', '.fodg','.ods', 
 	'.fods', '.odp','.fodp',
 	'.epub', '.TXT', '.MD', 
 	'.PDF', '.HTML', '.ODT'
-	'.FODT','.OGD','.FOGD', 
+       '.FODT','.OGD','.FOGD', 
        '.ODS','.FODS', '.ODP',
        '.FODP','.EPUB']
 
-img = ['.png', ̈́'.jpg', '.jpeg',.'svg',
-	'PNG', '.JPG','.JPEG' ,'.SVG']
+img = ['.jpg', '.jpeg', '.png', '.svg' 
+       '.JPG', '.JPEG', '.PNG', '.SVG']
 
 video = ['.mkv', '.MKV']
 
