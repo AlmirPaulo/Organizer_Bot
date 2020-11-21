@@ -12,7 +12,7 @@ Pass this lines on your terminal.
 This first command leads you to the directory where we gonna install the bot. And the other one downloads the bot file. 
 The next command will download and run the installation script. This script ensures that the bot will recognize the correct paths to the folders in your system.
 
-			sh -c $(wget -O- https://raw.githubusercontent.com/AlmirPaulo/Organizer_Bot/main/install.sh)
+			sh -c "$(wget -O- https://raw.githubusercontent.com/AlmirPaulo/Organizer_Bot/main/install.sh)" 
 
 Now is time to set the bot in the crontab. Start with this line.
 				
