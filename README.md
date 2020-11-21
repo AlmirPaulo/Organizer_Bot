@@ -3,18 +3,18 @@ A bot that works on the background moving all the files from the Downloads direc
 
 ## Installation
 Pass this lines on your terminal.
-				# Instalation Steps
+
 				wget ...
 				crontab -e 
 The first command downloads the bot file. The second opens your crontab. If its your first time in crontab, it will prompt to you to choose some text editor. Pick your favorite. Then pass the following line in the crontab.
-				# Crontab line
+
 				@reboot nohup python3 path/to/the/file/organizer_bot.py &
 Don't forget to save before quit. This line will make the bot works on the backgrounds silently. Don't forget to reboot too.
 ## Possible Issues
 ### Does it works on Windows?
 Not yet. 
 ### How I turn it off?
-				#
+				
 				ps ax| grep organizer_bot.py 
 				(pick the process id then...)
 				kill -9 process_id_here(its a number)
