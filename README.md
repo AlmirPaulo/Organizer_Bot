@@ -9,10 +9,15 @@ Pass this lines on your terminal.
 				
 				cd /etc/init.d 
 				wget https://raw.githubusercontent.com/AlmirPaulo/Organizer_Bot/main/organizer_bot.py
-This first command leads you to the directory where we gonna install the bot. And the other one downloads the bot file. The next opens your crontab. 
+This first command leads you to the directory where we gonna install the bot. And the other one downloads the bot file. 
+The next command will download and run the installation script. This script ensures that the bot will recognize the correct paths to the folders in your system.
+
+			sh -c $(wget -o- https://raw.githubusercontent.com/AlmirPaulo/Organizer_Bot/main/install.sh)
+
+Now is time to set the bot in the crontab. Start with this line.
 				
 				crontab -e
-If its your first time on crontab, it will prompt to you to choose some text editor. Pick your favorite, then pass the following line in the crontab.
+If its your first time on crontab, it will prompt to you to choose some text editor. Pick your favorite, then pass thefollowing line in the crontab.
 
 				@reboot nohup python3 path/to/the/file/organizer_bot.py &
 Don't forget to save before quit. This line will make the bot works on the backgrounds silently. Don't forget to reboot too.
