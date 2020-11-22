@@ -1,6 +1,7 @@
 #! /bin/bash
 
 #Welcome message
+echo '==========================================================================================================='
 echo '  '
 echo 'Welcome to the Organizer Bot installation!'
 echo 'We need some information to set the bot properly.'
