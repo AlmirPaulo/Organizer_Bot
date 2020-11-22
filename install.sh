@@ -1,27 +1,27 @@
 #! /bin/bash
 
-#sed -i 's///'
 #Welcome message
+echo '  '
 echo 'Welcome to the Organizer Bot installation!'
 echo 'We need some information to set the bot properly.'
 
 #Input variables
-read -p 'Whats your Personal Folder name? (The one inside your home directory) ' FOLDER
+read -p "What's your Personal Folder name? (The one inside your home directory) " FOLDER
 
-read -p 'What is the name of the folder that will receive text files? (should be inside your home directory) ' DOCS
+read -p "What is the name of the folder that will receive text files? (Must be inside your home directory) " DOCS
 
-read -p 'What is the name of the folder that will receive image files? (should be inside your home directory) ' PICS
+read -p "What is the name of the folder that will receive image files? (Must be inside your home directory) " PICS
 
-read -p 'What is the name of the folder that will receive video files? (should be inside your home directory) ' VIDEOS
+read -p "What is the name of the folder that will receive video files? (Must be inside your home directory) " VIDEOS
 
-read -p 'What is the name of the folder that will receive audio files? (should be inside your home directory) ' AUDIOS
+read -p "What is the name of the folder that will receive audio files? (Must be inside your home directory) " AUDIOS
 
 
-#Asking for permission
+#Asking for permission and setting bot
 echo "If you have answered wrong to any of these questions we can start this again."
 while true 
 do
-	read -p 'Do you want to restart? ' ANSWER
+	read -p "Do you want to restart? " ANSWER
 	case "$ANSWER" in 
 		[nN] | [nN][oO] )
 			sudo sed -i  "s/PERSONAL_FOLDER/$FOLDER/" /etc/init.d/organizer_bot.py
@@ -38,14 +38,14 @@ do
 			echo 'Cheers'
 			break;;
 		[yY] | [yY][eE][sS])
-			read -p 'Whats your Personal Folder name? (The one inside your home directory) ' FOLDER
-			read -p 'What is the name of the folder that will receive text files? (should be inside your home directory) ' DOCS
+			read -p "What's your Personal Folder name? (The one inside your home directory) " FOLDER
+			read -p "What is the name of the folder that will receive text files? (Must be inside your home directory) " DOCS
 
-			read -p 'What is the name of the folder that will receive image files? (should be inside your home directory) ' PICS
+			read -p "What is the name of the folder that will receive image files? (Must be inside your home directory) " PICS
 
-			read -p 'What is the name of the folder that will receive video files? (should be inside your home directory) ' VIDEOS
+			read -p "What is the name of the folder that will receive video files? (Must be inside your home directory) " VIDEOS
 
-			read -p 'What is the name of the folder that will receive audio files? (should be inside your home directory) ' AUDIOS
+			read -p "What is the name of the folder that will receive audio files? (Must be inside your home directory) " AUDIOS
 			;;
 	esac
 done
