@@ -26,8 +26,7 @@ Don't forget to save before quit. This line will make the bot works in the backg
 Not yet. 
 
 ### Does it Works in Mac?
-Honestly, I don't know. Maybe. If you test it and it works, please let me know!
-
+Honestly, I don't know. Maybe. If you test it, please let me know what happens!
 ### How I turn it off?
 				
 				ps ax| grep organizer_bot.py 
