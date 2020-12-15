@@ -1,4 +1,4 @@
-# Organizer_Bot
+# Organizer Bot
 A bot that works in the background moving all the files from the Downloads directory to the right directories based on the file type.
 
 ## Requirements
@@ -24,6 +24,10 @@ Don't forget to save before quit. This line will make the bot works in the backg
 ## Possible Issues
 ### Does it works in Windows?
 Not yet. 
+
+### Does it Works in Mac?
+Honestly, I don't know. Maybe. If you test it and it works, please let me know!
+
 ### How I turn it off?
 				
 				ps ax| grep organizer_bot.py 
