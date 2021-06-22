@@ -1,10 +1,17 @@
 #! /bin/bash
 
+#Todo:
+ # - Desnecessario perguntar o nome do home directory
+ # - criar um diretorio oculto para o bot
+ # - e rodar o script dentro dele
+
+
 #Welcome message
 echo '==========================================================================================================='
 echo '  '
 echo 'Welcome to the Organizer Bot installation!'
 echo 'We need some information to set the bot properly.'
+
 
 #Input variables
 read -p "What's your Personal Folder name? (The one inside your home directory) " FOLDER
@@ -25,6 +32,10 @@ do
 	read -p "Do you want to restart? " ANSWER
 	case "$ANSWER" in 
 		[nN] | [nN][oO] )
+            
+            sudo wget https://raw.githubusercontent.com/AlmirPaulo/Organizer_Bot/main/organizer_bot.py
+
+
 			sudo sed -i  "s/PERSONAL_FOLDER/$FOLDER/" /etc/init.d/organizer_bot.py
 			sudo sed -i  "s/Documents/$DOCS/" /etc/init.d/organizer_bot.py
 			sudo sed -i  "s/Pictures/$PICS/" /etc/init.d/organizer_bot.py
