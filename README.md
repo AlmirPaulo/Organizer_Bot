@@ -86,6 +86,6 @@ Just kidding :grin:, please let me know whatever bug you find.
 Thanks to [Kalle Hallden](https://github.com/KalleHallden) for the inspiration to make this bot. He made a similar one in this [video](https://www.youtube.com/watch?v=qbW6FRbaSl0&t=246s&ab_channel=KalleHallden) and I thought it was a great idea, but maybe a could code it in other way, with less resources. 
 
 ## Contribute
-If this bot make you life easier, make you happy in some way, consider once in a while buy me a coffee, just to encourage me to keep working on projects lke this. 
+If this bot make your life easier or make you happy in some way, consider once in a while buy me a coffee, just to encourage me to keep working on projects like this. 
 <!--Buy me a Coffee button--> 
 

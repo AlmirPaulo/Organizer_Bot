@@ -1,9 +1,12 @@
-#! /bin/bash
+#! /bin/env bash
 
-#Todo:
- # - Desnecessario perguntar o nome do home directory
- # - criar um diretorio oculto para o bot
- # - e rodar o script dentro dele
+# Software: install.sh for Organizer_Bot
+# Description: Install Organizer_Bot properly.
+# Author: Almir Paulo <https://almirpaulo.github.io>
+# Version: 0.2.0
+# Webpage: https://github.com/AlmirPaulo/Organizer_Bot
+# License: MIT
+
 
 
 #Welcome message
@@ -14,7 +17,8 @@ echo 'We need some information to set the bot properly.'
 
 
 #Input variables
-read -p "What's your Personal Folder name? (The one inside your home directory) " FOLDER
+
+read -p "What is the name of the folder where you receive all your downloads? (Must be inside your home directory) " DOWNLOADS 
 
 read -p "What is the name of the folder that will receive text files? (Must be inside your home directory) " DOCS
 
@@ -30,17 +34,22 @@ echo "If you have answered wrong to any of these questions we can start this aga
 while true 
 do
 	read -p "Do you want to restart? " ANSWER
-	case "$ANSWER" in 
+	case "$ANSWER" in
 		[nN] | [nN][oO] )
+            #criar um diretorio oculto para o bot
+            mkdir ~/.Organizer_Bot
+            FOLDER= "~/.Organizer_Bot"
             
-            sudo wget https://raw.githubusercontent.com/AlmirPaulo/Organizer_Bot/main/organizer_bot.py
+            wget https://raw.githubusercontent.com/AlmirPaulo/Organizer_Bot/main/organizer_bot.py
 
+            mv organizer_bot.py $FOLDER
 
-			sudo sed -i  "s/PERSONAL_FOLDER/$FOLDER/" /etc/init.d/organizer_bot.py
-			sudo sed -i  "s/Documents/$DOCS/" /etc/init.d/organizer_bot.py
-			sudo sed -i  "s/Pictures/$PICS/" /etc/init.d/organizer_bot.py
-			sudo sed -i  "s/Videos/$VIDEOS/" /etc/init.d/organizer_bot.py
-			sudo sed -i  "s/Music/$AUDIOS/" /etc/init.d/organizer_bot.py
+			sed -i  "s/PERSONAL_FOLDER/${USER}/" $FOLDER
+            sed -i "s/Downloads/$DOWNLOADS/" $FOLDER
+			sed -i  "s/Documents/$DOCS/" $FOLDER
+			sed -i  "s/Pictures/$PICS/" $FOLDER
+			sed -i  "s/Videos/$VIDEOS/" $FOLDER
+			sed -i  "s/Music/$AUDIOS/" $FOLDER
 
 			echo "It's Alive!" 
 			echo "Don't forget to set it in your crontab."
@@ -50,7 +59,9 @@ do
 			echo 'Cheers'
 			break;;
 		[yY] | [yY][eE][sS])
-			read -p "What's your Personal Folder name? (The one inside your home directory) " FOLDER
+
+            read -p "What is the name of the folder where you receive all your downloads? (Must be inside your home directory) " DOWNLOADS 
+
 			read -p "What is the name of the folder that will receive text files? (Must be inside your home directory) " DOCS
 
 			read -p "What is the name of the folder that will receive image files? (Must be inside your home directory) " PICS
