@@ -10,12 +10,9 @@ A bot that works in the background moving all the files from the Downloads direc
 ## Installation Guide
 Pass this lines on your terminal.
 	
-    cd ~	
-
-This first command leads you to the directory where we gonna install the bot. And the other one downloads the bot file. 
-The next command will download and run the installation script. This script ensures that the bot will recognize the correct paths to the folders in your system.
-
 	sh -c "$(wget -O- https://raw.githubusercontent.com/AlmirPaulo/Organizer_Bot/main/install.sh)" 
+
+This  command will download and run the installation script. This script ensures that the bot will recognize the correct paths to the folders in your system.
 
 Now it's time to set the bot in the crontab. Start with this line.
 				
@@ -87,5 +84,6 @@ Thanks to [Kalle Hallden](https://github.com/KalleHallden) for the inspiration t
 
 ## Contribute
 If this bot make your life easier or make you happy in some way, consider once in a while buy me a coffee, just to encourage me to keep working on projects like this. 
+(Button here soon...)
 <!--Buy me a Coffee button--> 
 
