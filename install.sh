@@ -38,18 +38,16 @@ do
 		[nN] | [nN][oO] )
             #criar um diretorio oculto para o bot
             mkdir ~/.Organizer_Bot
-            FOLDER= "${USER}/.Organizer_Bot/"
+            cd  ~/.Organizer_Bot
 
             wget https://raw.githubusercontent.com/AlmirPaulo/Organizer_Bot/main/organizer_bot.py
 
-            mv organizer_bot.py ${FOLDER}
-
-			sed -i  "s/PERSONAL_FOLDER/${USER}/" ${FOLDER}
-            sed -i "s/Downloads/$DOWNLOADS/" ${FOLDER}
-			sed -i  "s/Documents/$DOCS/" ${FOLDER}
-			sed -i  "s/Pictures/$PICS/" ${FOLDER}
-			sed -i  "s/Videos/$VIDEOS/" ${FOLDER}
-			sed -i  "s/Music/$AUDIOS/" ${FOLDER}
+			sed -i  "s/PERSONAL_FOLDER/${USER}/" .
+            sed -i "s/Downloads/$DOWNLOADS/" .
+			sed -i  "s/Documents/$DOCS/" .
+			sed -i  "s/Pictures/$PICS/" .
+			sed -i  "s/Videos/$VIDEOS/" .
+			sed -i  "s/Music/$AUDIOS/" .
 
 			echo "It's Alive!" 
 			echo "Don't forget to set it in your crontab."
@@ -57,6 +55,7 @@ do
 			echo ̈́'https://github.com/AlmirPaulo/Organizer_Bot/blob/main/README.md'
 			echo 'Contact-me on Github if you need any help'
 			echo 'Cheers'
+            cd ~
 			break;;
 		[yY] | [yY][eE][sS])
 
