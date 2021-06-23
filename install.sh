@@ -42,12 +42,12 @@ do
 
             wget https://raw.githubusercontent.com/AlmirPaulo/Organizer_Bot/main/organizer_bot.py
 
-			sed -i  "s/PERSONAL_FOLDER/${USER}/" .
-            sed -i "s/Downloads/$DOWNLOADS/" .
-			sed -i  "s/Documents/$DOCS/" .
-			sed -i  "s/Pictures/$PICS/" .
-			sed -i  "s/Videos/$VIDEOS/" .
-			sed -i  "s/Music/$AUDIOS/" .
+			sed -i  "s/PERSONAL_FOLDER/${USER}/" ./organizer_bot.py
+            sed -i "s/Downloads/$DOWNLOADS/" ./organizer_bot.py
+			sed -i  "s/Documents/$DOCS/" ./organizer_bot.py
+			sed -i  "s/Pictures/$PICS/" ./organizer_bot.py
+			sed -i  "s/Videos/$VIDEOS/" ./organizer_bot.py
+			sed -i  "s/Music/$AUDIOS/" ./organizer_bot.py
 
 			echo "It's Alive!" 
 			echo "Don't forget to set it in your crontab."
