@@ -84,6 +84,6 @@ Thanks to [Kalle Hallden](https://github.com/KalleHallden) for the inspiration t
 
 ## Contribute
 If this bot make your life easier or make you happy in some way, consider once in a while buy me a coffee, just to encourage me to keep working on projects like this. 
-(Button here soon...)
-<!--Buy me a Coffee button--> 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C26878E)
+
 
